@@ -50,8 +50,10 @@ namespace School.Pages
             UsernameTxt = this.txtUsername;
             PasswordTxt = this.txtPassword;
 
-            this.Opacity = 0; 
-            new Loading().Show();
+            this.Opacity = 0;
+            Loading loading = new Loading();
+            loading.setImage();
+            loading.Show();
             Timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
             Timer.Interval = 1000;
             Timer.Enabled = true; 

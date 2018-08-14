@@ -56,7 +56,7 @@ namespace School.Pages
             }
             this.grpStuProfile.Visible = !this.grpStuProfile.Visible;
             this.grpInfo.Visible = !this.grpStuProfile.Visible;
-            this.lblAbout.Visible = false;
+            this.pnlAbout.Visible = false;
         }
 
         void cleaner()
@@ -116,40 +116,12 @@ namespace School.Pages
             return true;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (this.isNotEmpty())
-            {
-                string name = txtName.Text;
-                string username = txtUsername.Text;
-                string password = txtPassword.Text;
-                string email = txtEmail.Text;
-                string surname = txtSurname.Text;
-                int gender = ckbMale.Checked ? 1 : 0;
-                using(SQLiteConnection con =new SQLiteConnection(Login.connection))
-                {
-                    string sql = $"UPDATE Students SET " +
-                        $"name='{name}', " +
-                        $"surname='{surname}', " +
-                        $"email='{email}', " +
-                        $"password='{password}', " +
-                        $"gender='{gender}', " +
-                        $"username='{username}'" +
-                        $"WHERE id={Login.LoginedUser.Id}";
-                    SQLiteCommand com = new SQLiteCommand(sql, con);
-                    con.Open();
-                    com.ExecuteNonQuery();                        
-                }
-                this.cleaner();
-                this.Close();
-            }
-        }
 
         private void FormResize(object sender, EventArgs e)
         { 
             this.grpStuProfile.Left = ((this.Width - this.grpStuProfile.Width) / 2 - 8);
             this.grpInfo.Left = ((this.Width - this.grpInfo.Width) / 2 - 8);
-            this.lblAbout.Left = ((this.Width - this.lblAbout.Width) / 2 - 8);
+            this.pnlAbout.Left = ((this.Width - this.pnlAbout.Width) / 2 - 8);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -157,15 +129,15 @@ namespace School.Pages
             this.grpStuProfile.Left = ((this.Width - this.grpStuProfile.Width) / 2 - 8);
             this.grpInfo.Left = ((this.Width - this.grpInfo.Width) / 2 - 8);
             this.grpInfo.Top = 50;
-            this.lblAbout.Left = ((this.Width - this.lblAbout.Width) / 2 - 8);
-            this.lblAbout.Top = 200;
+            this.pnlAbout.Left = ((this.Width - this.pnlAbout.Width) / 2 - 8);
+            this.pnlAbout.Top = 100;
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.grpStuProfile.Visible = false;
             this.grpInfo.Visible = false;
-            this.lblAbout.Visible = true;
+            this.pnlAbout.Visible = true;
         }
     }
 }

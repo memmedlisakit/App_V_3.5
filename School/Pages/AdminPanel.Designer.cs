@@ -60,7 +60,7 @@
             // 
             // menuAdmin
             // 
-            this.menuAdmin.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.menuAdmin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.menuAdmin.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.studentsToolStripMenuItem1,
             this.activationToolStripMenuItem,
@@ -79,56 +79,56 @@
             // studentsToolStripMenuItem1
             // 
             this.studentsToolStripMenuItem1.Name = "studentsToolStripMenuItem1";
-            this.studentsToolStripMenuItem1.Size = new System.Drawing.Size(161, 24);
+            this.studentsToolStripMenuItem1.Size = new System.Drawing.Size(168, 24);
             this.studentsToolStripMenuItem1.Text = "Activasiyali Tələbələr";
             this.studentsToolStripMenuItem1.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
             // 
             // activationToolStripMenuItem
             // 
             this.activationToolStripMenuItem.Name = "activationToolStripMenuItem";
-            this.activationToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.activationToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
             this.activationToolStripMenuItem.Text = "Activasiya";
             this.activationToolStripMenuItem.Click += new System.EventHandler(this.aCtivationsToolStripMenuItem_Click);
             // 
             // catgoryToolStripMenuItem
             // 
             this.catgoryToolStripMenuItem.Name = "catgoryToolStripMenuItem";
-            this.catgoryToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.catgoryToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.catgoryToolStripMenuItem.Text = "Catgoriya";
             this.catgoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // quationsToolStripMenuItem2
             // 
             this.quationsToolStripMenuItem2.Name = "quationsToolStripMenuItem2";
-            this.quationsToolStripMenuItem2.Size = new System.Drawing.Size(66, 24);
+            this.quationsToolStripMenuItem2.Size = new System.Drawing.Size(68, 24);
             this.quationsToolStripMenuItem2.Text = "Suallar";
             this.quationsToolStripMenuItem2.Click += new System.EventHandler(this.quationsToolStripMenuItem1_Click);
             // 
             // addQuationToolStripMenuItem
             // 
             this.addQuationToolStripMenuItem.Name = "addQuationToolStripMenuItem";
-            this.addQuationToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.addQuationToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.addQuationToolStripMenuItem.Text = "Sual Əlavə et";
             this.addQuationToolStripMenuItem.Click += new System.EventHandler(this.quationsToolStripMenuItem_Click);
             // 
             // ticketsToolStripMenuItem1
             // 
             this.ticketsToolStripMenuItem1.Name = "ticketsToolStripMenuItem1";
-            this.ticketsToolStripMenuItem1.Size = new System.Drawing.Size(68, 24);
+            this.ticketsToolStripMenuItem1.Size = new System.Drawing.Size(71, 24);
             this.ticketsToolStripMenuItem1.Text = "Biletlər";
             this.ticketsToolStripMenuItem1.Click += new System.EventHandler(this.ticketsToolStripMenuItem_Click);
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
             this.profileToolStripMenuItem.Text = "Öz səhifəm";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileUpdate);
             // 
             // resetAppToolStripMenuItem
             // 
             this.resetAppToolStripMenuItem.Name = "resetAppToolStripMenuItem";
-            this.resetAppToolStripMenuItem.Size = new System.Drawing.Size(124, 24);
+            this.resetAppToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
             this.resetAppToolStripMenuItem.Text = "Programı Sıfırla";
             this.resetAppToolStripMenuItem.Click += new System.EventHandler(this.ResetApp);
             // 
